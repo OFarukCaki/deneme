@@ -3,6 +3,8 @@ var builder = require('botbuilder');
 var pwned = require('./haveibeenpwned');
 const request = require('request');
 var striptags = require('striptags');
+require('dotenv-extended').load();
+
 
 
 // Setup Restify Server

@@ -3,7 +3,7 @@ var builder = require('botbuilder');
 var pwned = require('./haveibeenpwned');
 const request = require('request');
 var striptags = require('striptags');
-require('dotenv-extended').load();
+//require('dotenv-extended').load();
 
 
 
@@ -17,8 +17,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 // MICROSOFT_APP_ID = "f829d265-0e54-4350-a580-407d31613752";
 // MICROSOFT_APP_PASSWORD = "gerblVEEQV7;gfRO1126!;)";
 var connector = new builder.ChatConnector({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
+    appId: "38dfe0ef-1a67-4f37-a74d-0c95711d9d8c",
+    appPassword: "annmzLFI23$&xxGEYA102%$"
 });
 
 var bot = new builder.UniversalBot(connector);

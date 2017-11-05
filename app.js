@@ -12,11 +12,11 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 });
 
 // Create chat connector for communicating with the Bot Framework Service
-// MICROSOFT_APP_ID = '0be57560-0870-4c0d-a06f-fe9287c83d11';
-// MICROSOFT_APP_PASSWORD = 'iiaXFOD6313|/woysWPI3#)';
+MICROSOFT_APP_ID = "f829d265-0e54-4350-a580-407d31613752";
+MICROSOFT_APP_PASSWORD = "gerblVEEQV7;gfRO1126!;)";
 var connector = new builder.ChatConnector({
-    appId: "f829d265-0e54-4350-a580-407d31613752",
-    appPassword: "gerblVEEQV7;gfRO1126!;)"
+    appId: process.env.MICROSOFT_APP_ID,
+    appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 
 var bot = new builder.UniversalBot(connector);
